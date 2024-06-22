@@ -4,6 +4,7 @@
   "diagnostic.virtualTextPrefix": "* ",
   "diagnostic.virtualTextCurrentLineOnly": false,
   "coc.preferences.jumpCommand": "tab drop",
+  "coc.preferences.formatOnSaveFiletypes": ["*"],
   "suggest.completionItemKindLabels": {
     "method": "   Method",
     "function": "   Function",
