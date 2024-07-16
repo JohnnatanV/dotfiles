@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Termina las instancias actuales de Polybar
+killall -q polybar
+
+# Espera a que se cierren todos los procesos de Polybar
+while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
+
+# Lanza las barras en los monitores especificados
+polybar left &
+polybar right &

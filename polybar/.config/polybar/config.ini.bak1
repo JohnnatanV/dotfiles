@@ -1,0 +1,59 @@
+[global/wm]
+margin-top = 5
+bottom = true
+
+[bar/left]
+monitor = HDMI-1
+width = 100%
+height = 30
+background = #222222
+foreground = #FFFFFF
+modules-left = i3
+modules-center = date
+modules-right = cpu memory battery
+
+[bar/right]
+monitor = eDP-1
+width = 100%
+height = 30
+background = #222222
+foreground = #FFFFFF
+modules-left = i3
+modules-center = date
+modules-right = cpu memory battery
+
+[module/i3]
+type = internal/i3
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+
+[module/date]
+type = internal/date
+interval = 1
+date = %Y-%m-%d %H:%M:%S
+format = <label>
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = "CPU: "
+format = <label>
+label = %percentage%%
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = "MEM: "
+format = <label>
+label = %percentage_used%%
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = ADP1
+poll-interval = 30
+full-at = 98
+format-charging = <label-charging>
+format-charging-prefix = "BAT: "
+label-charging = %percentage%% (%remaining%)

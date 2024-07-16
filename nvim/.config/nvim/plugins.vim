@@ -33,4 +33,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Autoformat
 Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 
+" IntelliSense
+Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn run build'}
+
 call plug#end()
