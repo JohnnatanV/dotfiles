@@ -4,5 +4,5 @@ if type "xrandr"; then
   done
 else
   polybar --reload toph &
-  polybar --reload both &
+  # polybar --reload both &
 fi

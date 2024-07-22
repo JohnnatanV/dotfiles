@@ -35,7 +35,7 @@ bindsym Print exec --no-startup-id flameshot full -p ~/Imágenes/Screenshots/sho
 bindsym Control+Print exec --no-startup-id flameshot gui
 
 exec_always feh --bg-scale ~/Imágenes/Backgrounds/wallpaper.jpg
-exec_always xrandr --output eDP-1 --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal
+exec_always xrandr --output eDP --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-A-0 --primary --mode 1920x1080 --pos 1920x0 --rotate normal
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -132,7 +132,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+# bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
