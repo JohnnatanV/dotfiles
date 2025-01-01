@@ -73,6 +73,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+o exec firefox
 bindsym $mod+g exec google-chrome-stable
 bindsym $mod+n exec steam-native
+bindsym $mod+b exec brave
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec --no-startup-id dmenu_run
