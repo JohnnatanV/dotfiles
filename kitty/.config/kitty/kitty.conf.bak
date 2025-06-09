@@ -49,7 +49,7 @@ cursor_shape block
 #: the cursor shape to beam at shell prompts. You can avoid this by
 #: setting shell_integration to no-cursor.
 
-cursor_beam_thickness 6
+cursor_beam_thickness 5
 
 #: The thickness of the beam cursor (in pts).
 
@@ -2263,3 +2263,9 @@ allow_remote_control yes
 
 #: }}}
 
+
+
+# BEGIN_KITTY_THEME
+# Catppuccin-Macchiato
+include current-theme.conf
+# END_KITTY_THEME
