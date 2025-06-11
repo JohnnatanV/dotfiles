@@ -20,3 +20,20 @@ vim.api.nvim_create_autocmd("User", {
     }
   end,
 })
+
+
+-- Eliminar fondo en Normal y otros
+vim.api.nvim_create_autocmd("ColorScheme", {
+  pattern = "*",
+  callback = function()
+    vim.cmd [[
+      hi Normal guibg=NONE ctermbg=NONE
+      hi NormalNC guibg=NONE ctermbg=NONE
+      hi NormalFloat guibg=NONE ctermbg=NONE
+      hi FloatBorder guibg=NONE ctermbg=NONE
+      hi VertSplit guibg=NONE ctermbg=NONE
+      hi TelescopeNormal guibg=NONE
+      hi TelescopeBorder guibg=NONE
+    ]]
+  end,
+})
